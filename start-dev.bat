@@ -1,7 +1,7 @@
 @echo off
 echo Starting Vinagaya Transport Development Servers...
 echo.
-echo Backend will start on http://localhost:5000
+echo Backend will start on https://vinayagatransport-backend1.onrender.com
 echo Frontend will start on http://localhost:5173
 echo.
 echo Press Ctrl+C to stop both servers
@@ -29,6 +29,6 @@ start "Frontend Server" cmd /k "cd frontend && npm run dev"
 
 echo Both servers are starting! Check the opened windows for output.
 echo Frontend: http://localhost:5173
-echo Backend API: http://localhost:5000/api
+echo Backend API: https://vinayagatransport-backend1.onrender.com/api
 pause
 
