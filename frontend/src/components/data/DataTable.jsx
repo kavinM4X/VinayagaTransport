@@ -198,11 +198,11 @@ const DataTable = ({
       {/* Table */}
       <div className="card overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full">
+          <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-gray-200 dark:border-gray-700">
                 {actions && (
-                  <th className="text-left p-4">
+                  <th className="text-left p-3 sm:p-4 hidden sm:table-cell">
                     <input
                       type="checkbox"
                       checked={
@@ -219,7 +219,7 @@ const DataTable = ({
                   <th
                     key={column.key}
                     className={cn(
-                      "text-left p-4 font-semibold text-gray-600 dark:text-gray-300",
+                      "text-left p-3 sm:p-4 font-semibold text-gray-600 dark:text-gray-300",
                       sortable && "cursor-pointer hover:text-gray-900 dark:hover:text-white",
                       column.width && `w-${column.width}`
                     )}
@@ -240,7 +240,7 @@ const DataTable = ({
                   </th>
                 ))}
                 {actions && (
-                  <th className="text-right p-4">Actions</th>
+                  <th className="text-right p-3 sm:p-4 hidden sm:table-cell">Actions</th>
                 )}
               </tr>
             </thead>
@@ -251,7 +251,7 @@ const DataTable = ({
                   <tr>
                     <td 
                       colSpan={columns.length + (actions ? 2 : 0)} 
-                      className="p-8 text-center text-gray-500"
+                      className="p-6 sm:p-8 text-center text-gray-500"
                     >
                       <motion.div
                         initial={{ opacity: 0 }}
@@ -267,7 +267,7 @@ const DataTable = ({
                   <tr>
                     <td 
                       colSpan={columns.length + (actions ? 2 : 0)} 
-                      className="p-8 text-center"
+                      className="p-6 sm:p-8 text-center"
                     >
                       {emptyStateContent || (
                         <div className="text-gray-500">
@@ -297,7 +297,7 @@ const DataTable = ({
                         onClick={() => onRowClick?.(row)}
                       >
                         {actions && (
-                          <td className="p-4">
+                          <td className="p-3 sm:p-4 hidden sm:table-cell">
                             <input
                               type="checkbox"
                               checked={isSelected}
@@ -309,7 +309,7 @@ const DataTable = ({
                         )}
                         
                         {columns.map((column) => (
-                          <td key={column.key} className="p-4">
+                          <td key={column.key} className="p-3 sm:p-4 whitespace-normal break-words">
                             {column.cell ? 
                               column.cell({ getValue: () => row[column.accessorKey], row }) : 
                               row[column.accessorKey]
@@ -318,7 +318,7 @@ const DataTable = ({
                         ))}
                         
                         {actions && (
-                          <td className="p-4">
+                          <td className="p-3 sm:p-4 hidden sm:table-cell">
                             <div className="flex justify-end gap-1">
                               <Button
                                 variant="ghost"
