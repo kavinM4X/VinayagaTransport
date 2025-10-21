@@ -1,0 +1,50 @@
+{
+  "name": "transport-pro",
+  "version": "2.0.0",
+  "description": "Professional Transport Management System",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:all": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start": "npm run start --workspace=backend",
+    "build": "npm run build --workspace=frontend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "lint": "npm run lint --workspace=frontend",
+    "install:all": "npm install && npm install --workspace=frontend && npm install --workspace=backend",
+    "clean": "npm run clean --workspace=frontend && npm run clean --workspace=backend"
+  },
+  "keywords": [
+    "transport",
+    "management",
+    "react",
+    "nodejs",
+    "mongodb",
+    "professional",
+    "fullstack"
+  ],
+  "author": "Transport Management Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/transport-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/transport-pro/issues"
+  },
+  "homepage": "https://github.com/your-org/transport-pro#readme"
+}

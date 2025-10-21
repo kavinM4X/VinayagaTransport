@@ -1,0 +1,20 @@
+{
+  "name": "Vinagaya Transport",
+  "short_name": "Vinagaya",
+  "description": "Professional Transport Management System",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#339933",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "transportation"],
+  "lang": "en"
+}
