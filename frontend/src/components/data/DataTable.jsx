@@ -196,9 +196,9 @@ const DataTable = ({
       </div>
 
       {/* Table */}
-      <div className="card overflow-hidden">
-        <div className="overflow-x-auto">
-          <table className="w-full text-sm">
+      <div className="card">
+        <div className="overflow-x-auto px-2 sm:px-0" style={{ WebkitOverflowScrolling: 'touch' }}>
+          <table className="w-full min-w-[900px] text-sm">
             <thead>
               <tr className="border-b border-gray-200 dark:border-gray-700">
                 {actions && (

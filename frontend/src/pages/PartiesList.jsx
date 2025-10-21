@@ -388,7 +388,7 @@ const PartiesList = () => {
       </div>
 
       {/* Data Table */}
-      <Card className="p-0 overflow-hidden">
+      <Card className="p-0">
         <DataTable
           data={filteredData}
           columns={columns}

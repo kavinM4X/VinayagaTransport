@@ -12,8 +12,8 @@ const Section = ({ title, items }) => (
       <h3 className="text-lg font-semibold">{title}</h3>
       <Badge variant="secondary">{items.length}</Badge>
     </div>
-    <div className="overflow-x-auto">
-      <table className="min-w-full text-sm">
+    <div className="overflow-x-auto -mx-4 sm:mx-0 px-2" style={{ WebkitOverflowScrolling: 'touch' }}>
+      <table className="min-w-[700px] text-sm">
         <thead>
           <tr className="text-left text-gray-500 border-b">
             <th className="py-2 pr-4">S.No</th>
