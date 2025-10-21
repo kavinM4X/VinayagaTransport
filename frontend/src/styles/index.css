@@ -149,6 +149,60 @@
   }
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+  
+  .page-title {
+    @apply text-2xl;
+  }
+  
+  .page-subtitle {
+    @apply text-base;
+  }
+  
+  .card {
+    @apply mx-0;
+  }
+  
+  /* Table responsive improvements */
+  .table-container {
+    @apply -mx-4 px-4;
+  }
+  
+  /* Form improvements */
+  .form-grid {
+    @apply grid-cols-1;
+  }
+  
+  /* Button improvements */
+  .btn {
+    @apply text-sm px-3 py-2;
+  }
+  
+  /* Hide non-essential elements on mobile */
+  .mobile-hidden {
+    @apply hidden;
+  }
+  
+  /* Show mobile-specific elements */
+  .mobile-only {
+    @apply block;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    @apply hidden;
+  }
+  
+  .mobile-hidden {
+    @apply block;
+  }
+}
+
 /* Dark Mode */
 .dark {
   body {

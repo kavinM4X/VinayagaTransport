@@ -54,8 +54,8 @@ const PartiesWeight = () => {
         />
       </div>
 
-      <div className="overflow-x-auto bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 -mx-4 sm:mx-0 px-2" style={{ WebkitOverflowScrolling: 'touch' }}>
-        <table className="min-w-[700px] divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="overflow-x-auto bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 px-2 sm:px-0" style={{ WebkitOverflowScrolling: 'touch' }}>
+        <table className="w-full min-w-[700px] divide-y divide-gray-200 dark:divide-gray-700">
           <thead className="bg-gray-50 dark:bg-gray-900/20">
             <tr>
               <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider">Serial</th>

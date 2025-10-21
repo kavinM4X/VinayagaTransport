@@ -113,8 +113,8 @@ const Calendar = () => {
           {selectedEvents.length === 0 ? (
             <div className="p-6 text-gray-500">No reminders for this date.</div>
           ) : (
-            <div className="overflow-x-auto -mx-4 sm:mx-0 px-2" style={{ WebkitOverflowScrolling: 'touch' }}>
-              <table className="min-w-[800px] text-sm">
+            <div className="overflow-x-auto px-2 sm:px-0" style={{ WebkitOverflowScrolling: 'touch' }}>
+              <table className="w-full min-w-[800px] text-sm">
                 <thead>
                   <tr className="text-left text-gray-500 border-b">
                     <th className="py-2 pr-4">S.No</th>

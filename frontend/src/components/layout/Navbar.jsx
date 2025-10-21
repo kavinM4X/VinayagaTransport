@@ -39,7 +39,7 @@ const Navbar = () => {
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700"
     >
-      <div className="px-4 lg:px-6">
+      <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Left Section */}
           <div className="flex items-center gap-4">
@@ -99,7 +99,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             {/* Search */}
             {isAuthenticated && (
-              <div className="hidden md:flex items-center gap-2 px-3 py-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 w-72">
+              <div className="hidden md:flex items-center gap-2 px-3 py-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 w-64 lg:w-72">
                 <Search className="w-4 h-4 text-gray-400" />
                 <input
                   type="text"

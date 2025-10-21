@@ -148,7 +148,7 @@ const Dashboard = () => {
       </motion.div>
 
       {/* Stats Cards */}
-      <motion.div variants={itemVariants} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         <StatsCard
           title="Total Parties"
           value={displayStats.total}
@@ -187,7 +187,7 @@ const Dashboard = () => {
       </motion.div>
 
       {/* Charts and Analytics */}
-      <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
         <Card>
           <div className="card-header">
             <h3 className="text-lg font-semibold">Batch Trends</h3>
@@ -253,7 +253,7 @@ const Dashboard = () => {
       </motion.div>
 
       {/* Quick Actions and Recent Activity */}
-      <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <motion.div variants={itemVariants} className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
         <div className="lg:col-span-2">
           <QuickActions />
         </div>
